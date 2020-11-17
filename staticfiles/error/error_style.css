@@ -1,0 +1,87 @@
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  background: #FFFFFF ;
+  overflow: hidden;
+}
+.hdng{
+  margin-left: 120px;
+  margin-top: 50px;
+  margin-bottom: -70px;
+  font-size: 20px;
+}
+.error{
+    margin-left: 120px;
+    margin-top: 50px;
+    margin-bottom: -70px;
+    font-size: 60px;
+    color: red;
+}
+#screen{
+  margin: 150px 10%;
+  width: 80%;
+  height: 320px;
+  position: relative;
+}
+#character{
+  position: absolute;
+  top: 200px;
+}
+.animate{
+  animation: jump 1s;
+}
+#character img{
+  width: 121px;
+}
+@keyframes jump {
+  0%{
+    top: 200px;
+  }
+  30%{
+    top: 100px;
+  }
+  70%{
+    top: 100px;
+  }
+  100%{
+    top: 200px;
+  }
+}
+#bullet{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: animate 2s linear infinite;
+
+}
+#bullet img{
+  width: 64px;
+}
+@keyframes animate {
+  0%{
+    left: 750px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+
+.over{
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  color: red;
+}
+.button{
+    margin-left: 40px;
+    font-size: 20px;
+    color: red;
+    font-family: 'Permanent Marker';
+}

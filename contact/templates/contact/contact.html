@@ -1,0 +1,25 @@
+{% load static %}
+<html lang='en' dir="ltr">
+  <head>
+     <meta charset="utf-8">
+     <title>Ruby's Contact Page</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="{% static 'contact/style.css' %}">
+  </head>
+  <body>
+
+     <div class="landing">
+      <h1>Ruby's Contact Page</h1>
+      <div class="content">
+         <h2><span>Contact</span> me <span>to meet</span><br> for coffee.</h2>
+         <p>Hi! If you like my work and are interested in working with me<br> please feel free to shoot me an e-mail for either freelance<br> work or a company position.
+         </p>
+
+         <a href = "mailto: rubyalesi@icloud.com">Send Email</a>
+         <a role="button" href="{% url 'home' %}">Home</a>
+     <img class="second" src="{% static 'contact/giphy.gif' %}">
+   </div>
+  </body>
+ </html>

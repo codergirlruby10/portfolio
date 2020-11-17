@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr" onkeyup="if(event.keyCode == 32 || event.keyCode == 38){ jump() }">
+  <head>
+ <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <a class="button" href="{% url 'home' %}">Home</a>
+    <title> ERROR 404</title>
+    <link rel="stylesheet" href="{% static 'error/error_style.css' %}">
+   </head>
+   <body>
+     <div class="error">
+      404 PAGE NOT FOUND
+      </div>
+<br>
+    <div class="hdng">
+    Press "Space Key" Or "Up-arrow Key" to jump .
+    <br>
+
+    </div>
+    <div id="screen">
+      <hr>
+      <div id="character">
+        <img src="{% static 'error/character.gif' %}">
+      </div>
+      <div id="bullet">
+        <img src="{% static 'error/bullet.jpg' %}">
+      </div>
+      <div class="over">
+        <h1>Game Over<br>
+        Reload Page.</h1>
+      </div>
+    </div>
+    <script type="text/javascript" src="{% static 'error/app.js' %}"></script>
+  </body>
+</html>
