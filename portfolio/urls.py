@@ -9,7 +9,6 @@ from django.conf.urls import handler404
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name ='home'),
-    path('blog/', include('blog.urls')),
     path('contact/', include('contact.urls')),
     path('error/', include('error.urls')),
 ]
